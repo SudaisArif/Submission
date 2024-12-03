@@ -18,16 +18,16 @@ class FastSpeechRecognition:
     def get_last_command(self):
         if self.recognizer.AcceptWaveform(self.stream.read(4000, exception_on_overflow=False)):
             result = self.recognizer.Result()
-            print(f"Raw result: {result}")  # Debugging raw result
+            print(f"result: {result}")  
             try:
                 result_dict = json.loads(result)
                 command = result_dict.get("text", "")
-                print(f"Parsed command: {command}")  # Debugging parsed command
+                
                 return command
             except json.JSONDecodeError as e:
-                print(f"Error decoding JSON: {e}")
+                print(f"Error {e}")
         else:
-            print("Partial result or no audio detected")
+            print("No audio detected")
         return None
 
     def stop_listening(self):

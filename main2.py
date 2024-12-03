@@ -158,8 +158,8 @@ def onStep(app):
 
         app.snowman.updateSnowman(app)
     elif app.inMainMenu:
-        pass
-        #app.mainsound.play(loop=True)
+        
+        app.mainsound.play(loop=True)
 def decreaseLine(app):
     app.remainingLine -= 50
                 
