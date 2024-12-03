@@ -10,6 +10,10 @@ press v to turn on voice or ai at the custom level
 
 replace the url with this with the path for the vosk model on your comuter and ensure it is in the same folder as main2
 
+https://alphacephei.com/vosk/models
+
+download vosk model from here: "vosk-model-small-en-us-0.15"
+
 I found my mac did not allow for my camera to be accessed so it would be better to run on windows
 
 To start the program run main2
